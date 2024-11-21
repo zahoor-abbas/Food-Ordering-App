@@ -8,8 +8,7 @@ export const StoreContext = createContext(null);
 const StoreContextProvider = (props) => {
 
   const [cartItem, setCartItem] = useState({})
-  // const url  = "https://invonixtech.com"
-  const url  = "http://localhost:4000"
+  const url  = "https://invonixtech.com"
 
   const [food_list, setFoodList] = useState([])
 
