@@ -10,7 +10,7 @@ import Orders from './pages/Orders/Orders';
 
 
 const App = () => {
- const url = 'https://invonixtech.com'
+ const url = 'https://food-ordering-app-oxls.vercel.app/'
 
   return (
     <Router>

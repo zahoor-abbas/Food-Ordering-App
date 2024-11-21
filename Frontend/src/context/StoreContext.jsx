@@ -8,7 +8,7 @@ export const StoreContext = createContext(null);
 const StoreContextProvider = (props) => {
 
   const [cartItem, setCartItem] = useState({})
-  const url  = "https://invonixtech.com"
+  const url  = "https://food-ordering-app-oxls.vercel.app/"
 
   const [food_list, setFoodList] = useState([])
 
