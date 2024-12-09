@@ -1,0 +1,127 @@
+.navbar{
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  z-index: 99;
+  top: 0;
+}
+.navbar .logo{
+  width: 150px;
+}
+.nav-menu{
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  color: #49557e;
+  font-size: 18px;
+}
+.nav-menu li:hover{
+  cursor: pointer;
+}
+.navbar-right{
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+.navbar .navbar-right .signinbtn{
+  padding: 10px 30px;
+  border: 1px solid tomato;
+  border-radius: 50px;
+  cursor: pointer;
+  background: transparent;
+  color: #49557e;
+  font-size: 16px;
+  transition: 0.3s;
+
+}
+.navbar .navbar-right .signinbtn:hover{
+  background-color: #fff4f2;
+}
+.navbar .nav-menu .active{
+  padding-bottom: 2px;
+  border-bottom: 2px solid #49557e;
+  color: red;
+
+}
+.navbar-search-icon{
+  position: relative;
+}
+.navbar-search-icon .dot{
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: tomato;
+  border-radius: 50px;
+  top: -8px;
+  right: -8px;
+
+}
+.navbar-profile{
+  position: relative;
+}
+.nav-profile-dropdown{
+  position: absolute;
+  z-index: 1;
+  list-style: none;
+  display: none;
+  right: 0;
+
+
+}
+.navbar-profile:hover .nav-profile-dropdown{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 12px 25px;
+  border-radius: 4px;
+  border: 1px solid tomato ;
+  background-color: #fff2ef;
+  outline: 2px solid white;
+}
+.nav-profile-dropdown li{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.nav-profile-dropdown img{
+  width: 20px;
+}
+.nav-profile-dropdown li:hover{
+  color: tomato;
+}
+@media (max-width:1050px){
+  .navbar .logo{
+    width: 120px;
+  }
+  .navbar-right{
+    gap: 10px;
+  }
+  .nav-menu{
+    gap: 18px;
+    font-size: 17px;
+  }
+  .navbar-right img{
+    width: 20px;
+  }
+  .navbar .navbar-right .signinbtn{
+    padding: 7px 20px;
+    font-size: 15px;
+  }
+  
+}
+@media (max-width:768px){
+  .nav-menu{
+    display: none;
+  }
+  
+}
+@media (max-width:320px){
+  .navbar .navbar-right .signinbtn{
+    padding: 5px;
+  }
+  
+
+}

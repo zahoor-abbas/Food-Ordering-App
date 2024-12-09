@@ -1,0 +1,50 @@
+.verify{
+  min-height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.verify .spinner{
+  width: 100px;
+  height: 100px;
+  
+  /* place-self: center; */
+  border: 5px solid #bdbdbd;
+  border-top-color: tomato;
+  border-radius: 50%;
+  animation: rotate 1s infinite;
+  display: grid;
+  border-right-color:orange ;
+
+}
+
+.verify .spinner .spinner-inner{
+  border: 5px solid white;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  place-self: center;
+  border-bottom-color:black ;
+  animation: rotate 1s infinite;
+  display: grid;
+  border-left-color:red ;
+
+
+
+}
+.spinner .spinner-inner .spinner-inner1{
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  place-self: center;
+  border-radius: 50%;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.8);
+}
+
+@keyframes rotate {
+  100%{
+    transform: rotate(360deg);
+  }
+  
+}
